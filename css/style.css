@@ -1,0 +1,120 @@
+/*start glable rule */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+html {
+  scroll-padding: 5px;
+  scrollbar-width: 10px;
+  scrollbar-color: red;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#200016, #10001f);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/*end glable rule */
+
+/* start header */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+header .container h2 a {
+  font-size: 40px;
+}
+header .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container ul li a {
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+header .container ul li a:hover,
+.active {
+  background-color: white;
+  border-radius: 20px;
+  color: #200016;
+}
+/* end header */
+
+/* start hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top, #200016, transparent);
+}
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#moon2 {
+  mix-blend-mode: screen;
+  transform: translateY(40px);
+}
+.novail {
+  position: absolute;
+  left: 47%;
+  transform: translateX(-47%);
+  font-size: 20px;
+  transform: translateY(184px);
+  color: white;
+}
+/* end hero */
+
+/* contact */
+.contact {
+  padding: 50px 15px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(#200016, #10001f);
+  position: relative;
+  z-index: 99;
+}
+
+.info {
+  padding: 30px 0px;
+}
+.info h2 {
+  padding: 20px 0;
+}
+.info p {
+  line-height: 1.7;
+}
+/* end contact */
